@@ -1,0 +1,650 @@
+/* =========================
+   PAGE
+========================= */
+
+.about-page {
+  /* background: #fdfbf8; */
+  color: #0b1028;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+  padding: 55px 0 45px;
+/* 
+  background:
+    radial-gradient(circle at 7% 15%, #e9ddff 0 24px, transparent 25px),
+    radial-gradient(circle at 48% 25%, #eee8ff 0 42px, transparent 43px),
+    linear-gradient(
+      110deg,
+      #fffaf8 0%,
+      #fffdfa 38%,
+      #f6f2ff 72%,
+      #e6f3ff 100%
+    ); */
+}
+
+.about-label {
+  color: #5937e8;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 43px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #08102b;
+
+  margin-bottom: 18px;
+}
+
+.about-title span {
+  color: #5736e8;
+}
+
+.about-description {
+  max-width: 500px;
+
+  color: #62677a;
+
+  /* same as contact page */
+  font-size: 18px;
+  line-height: 1.55;
+
+  margin-bottom: 25px;
+}
+
+.mission-btn {
+  border: none !important;
+
+  background: linear-gradient(
+    90deg,
+    #5938ef,
+    #6644f1
+  ) !important;
+
+  padding: 10px 22px !important;
+
+  border-radius: 7px !important;
+
+  /* same as contact button */
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.mission-btn span {
+  margin-left: 10px;
+}
+
+.hero-about-image {
+  width: 100%;
+  height: 320px;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   TOP FOUR CARDS
+========================= */
+
+.user-section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.four-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================
+   COMMON CARDS
+========================= */
+
+.info-card {
+  width: 100%;
+  min-width: 0;
+
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  border: 1px solid #e7e4e5;
+  border-radius: 12px;
+
+  transition: 0.25s ease;
+}
+
+.info-card:hover {
+  border-color: #d3cbf8;
+
+  box-shadow:
+    0 6px 20px rgba(75, 55, 160, 0.07);
+
+  transform: translateY(-2px);
+}
+
+.info-card > div:last-child {
+  min-width: 0;
+}
+
+
+/* ICON */
+
+.info-icon {
+  width: 57px;
+  height: 57px;
+  min-width: 57px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  color: #5737ef;
+
+  background: linear-gradient(
+    135deg,
+    #eee7ff,
+    #f5efff
+  );
+}
+
+.info-card:nth-child(even) .info-icon {
+  color: #168bd9;
+
+  background: linear-gradient(
+    135deg,
+    #e9f5ff,
+    #edf8ff
+  );
+}
+
+
+/* CARD TEXT */
+
+.info-card h5 {
+  color: #090d24;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1.3;
+
+  margin: 0 0 7px;
+}
+
+.info-card p {
+  color: #62677a;
+
+  font-size: 15px;
+  line-height: 1.5;
+
+  margin: 0;
+}
+
+
+/* =========================
+   STORY SECTION
+========================= */
+
+.story-section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+
+/* STORY IMAGE */
+
+.story-image {
+  position: relative;
+
+  height: 260px;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.story-image-text {
+  position: absolute;
+
+  right: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.94);
+
+  padding: 18px 22px;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 1.4;
+
+  font-weight: 700;
+
+  color: #10152e;
+}
+
+.small-line {
+  width: 28px;
+  height: 2px;
+
+  background: #5638ee;
+
+  margin-top: 10px;
+}
+
+
+/* STORY TEXT */
+
+.story-content {
+  padding: 10px;
+}
+
+.story-content h2 {
+  color: #090d24;
+
+  /* same as contact form heading */
+  font-size: 27px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.story-content p {
+  color: #62677a;
+
+  font-size: 15px;
+  line-height: 1.65;
+
+  margin: 0;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats-box {
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #f8f4ff,
+    #edf7ff
+  );
+
+  padding: 25px 18px;
+
+  border-radius: 12px;
+}
+
+.stats-box h6 {
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stat {
+  text-align: center;
+
+  padding: 0 8px;
+
+  border-right: 1px solid #e0deec;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat h2 {
+  color: #5537ee;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  margin-bottom: 8px;
+}
+
+.stat:nth-child(2) h2,
+.stat:nth-child(4) h2 {
+  color: #138ad4;
+}
+
+.stat:nth-child(3) h2 {
+  color: #b43ce2;
+}
+
+.stat p {
+  color: #626779;
+
+  font-size: 13px;
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+
+/* =========================
+   MISSION / VISION / VALUES
+========================= */
+
+.mission-section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.three-card-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+.three-card-grid .info-card {
+  min-height: 145px;
+
+  padding: 22px;
+}
+
+.three-card-grid .info-card h5 {
+  font-size: 16px;
+}
+
+.three-card-grid .info-card p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+
+/* =========================
+   WHY CHOOSE
+========================= */
+
+.why-section {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.why-section > h2 {
+  text-align: center;
+
+  color: #090d24;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  margin-bottom: 35px;
+}
+
+.why-section > h2 span {
+  color: #5736e8;
+}
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+
+/* Why choose items */
+
+.info-card.why {
+  border: none;
+
+  background: transparent;
+
+  padding: 8px;
+
+  min-height: 85px;
+
+  box-shadow: none;
+}
+
+.info-card.why:hover {
+  border: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.info-card.why .info-icon {
+  width: 53px;
+  height: 53px;
+  min-width: 53px;
+}
+
+.info-card.why h5 {
+  font-size: 16px;
+
+  margin-bottom: 6px;
+}
+
+.info-card.why p {
+  font-size: 15px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta-container {
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+
+.community-banner {
+  min-height: 100px;
+
+  padding: 20px 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 10px;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 5% 120%,
+      rgba(255, 255, 255, 0.22) 0 60px,
+      transparent 61px
+    ),
+    linear-gradient(
+      100deg,
+      #5937eb,
+      #4766ec,
+      #7c49ec
+    );
+}
+
+.community-banner h4 {
+  font-size: 16px;
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+.community-banner p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #eeeaff;
+}
+
+.get-started-btn {
+  background: white !important;
+
+  color: #5638e8 !important;
+
+  border: none !important;
+  border-radius: 6px !important;
+
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+  padding: 9px 20px !important;
+}
+
+.get-started-btn span {
+  margin-left: 8px;
+}
+
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1200px) {
+
+  /*
+     4 cards become cramped on normal
+     laptop widths, so use 2 columns.
+  */
+
+  .four-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .hero-about-image {
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .three-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-image {
+    height: 300px;
+  }
+
+  .story-content {
+    padding: 10px 0;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+  .about-hero {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 16px;
+  }
+
+  .user-section,
+  .story-section,
+  .mission-section,
+  .why-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .four-card-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+  .stat {
+    border-right: none;
+  }
+
+  .community-banner {
+    padding: 22px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+}

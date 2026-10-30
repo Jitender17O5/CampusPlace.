@@ -1,0 +1,207 @@
+
+/* ================= STUDENTS TABLE ================= */
+
+.admin-students-table {
+  width: 100%;
+  min-width: 950px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+/* Column widths */
+.admin-students-table th:nth-child(1) {
+  width: 4%;
+}
+
+.admin-students-table th:nth-child(2) {
+  width: 17%;
+}
+
+.admin-students-table th:nth-child(3) {
+  width: 21%;
+}
+
+.admin-students-table th:nth-child(4) {
+  width: 10%;
+}
+
+.admin-students-table th:nth-child(5) {
+  width: 9%;
+}
+
+.admin-students-table th:nth-child(6) {
+  width: 27%;
+}
+
+.admin-students-table th:nth-child(7) {
+  width: 12%;
+}
+
+/* Header */
+.admin-students-table thead th {
+  background: #f5f7fb;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 16px 12px;
+  border-bottom: 1px solid #e9edf3;
+  white-space: nowrap;
+}
+
+/* Table rows */
+.admin-students-table tbody td {
+  padding: 18px 12px;
+  color: #334155;
+  border-bottom: 1px solid #edf0f5;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.admin-students-table tbody tr:hover td {
+  background: #f8faff;
+}
+
+.admin-students-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ================= STUDENT NAME ================= */
+
+.student-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.student-avatar {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 12px;
+  background: #e7efff;
+  color: #1769ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #172033;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* ================= EMAIL ================= */
+
+.student-email {
+  color: #64748b;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* ================= COURSE BADGE ================= */
+
+.student-course-badge {
+  background: #e8f0ff !important;
+  color: #f3f4f8 !important;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ================= COLLEGE LINE CLAMP ================= */
+
+.student-college-text {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: 3em;
+  overflow-wrap: anywhere;
+}
+
+/* ================= VIEW BUTTON ================= */
+
+.student-view-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 9px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.student-view-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+
+/* ================= STUDENT ACTIONS ================= */
+
+.student-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.student-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 9px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.student-delete-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* ================= DELETE MODAL ================= */
+
+.student-delete-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc3545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .admin-students-table {
+    min-width: 900px;
+  }
+
+  .admin-students-table tbody td {
+    padding: 14px 10px;
+  }
+}

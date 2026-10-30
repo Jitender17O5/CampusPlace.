@@ -1,0 +1,265 @@
+
+.application-page {
+  min-height: 100%;
+  background: #f8fafc;
+}
+
+/* Header */
+.application-header {
+  background: linear-gradient(120deg, #1e3a8a, #2563eb);
+  color: white;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.application-header h2 {
+  font-size: 26px;
+}
+
+.application-header p {
+  color: #dbeafe;
+  font-size: 14px;
+}
+
+/* Statistics */
+.application-stat-card,
+.application-filter-card,
+.application-job-card,
+.application-empty-state {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+}
+
+.application-stat-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.application-stat-card:hover,
+.application-job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.09);
+}
+
+.app-stat-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.app-stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+/* Search */
+.app-search-icon {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.app-search-input {
+  border-color: #e2e8f0;
+  padding: 11px 12px;
+  font-size: 14px;
+}
+
+.app-search-input:focus {
+  box-shadow: none;
+  border-color: #2563eb;
+}
+
+/* Filter Buttons */
+.app-filter-list {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.app-filter-btn {
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.app-filter-btn:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.app-filter-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Application Cards */
+.application-job-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.app-company-icon {
+  width: 52px;
+  height: 52px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+
+.app-job-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.app-company-name {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.app-job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.app-job-info div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.app-job-info svg {
+  color: #94a3b8;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Status Badges */
+.app-status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.app-status-applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.app-status-review {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.app-status-shortlisted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.app-status-interview {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.app-status-hired {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.app-status-rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Card Footer */
+.app-card-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+
+.app-applied-date {
+  color: #94a3b8;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.app-card-footer .btn {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Empty State */
+.empty-app-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Loading */
+.application-loading {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .application-header {
+    padding: 24px;
+  }
+
+  .application-header h2 {
+    font-size: 22px;
+  }
+
+  .application-filter-card .card-body {
+    padding: 18px !important;
+  }
+
+  .app-filter-list {
+    flex-wrap: nowrap;
+  }
+}

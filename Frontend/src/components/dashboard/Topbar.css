@@ -1,0 +1,70 @@
+
+/* Main Topbar */
+.campus-topbar {
+  height: 70px;
+  background-color: #e9edff;
+  border-bottom: 1px solid #dce3f5;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.04);
+}
+
+/* Page Title */
+.topbar-title {
+  color: #182337;
+  font-size: 21px;
+  letter-spacing: 0.2px;
+}
+
+/* Notification Container */
+.notification-wrapper {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #dbe7ff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+.notification-wrapper:hover {
+  background-color: #c7d9ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.12);
+}
+
+/* Notification Icon */
+.notification-icon {
+  color: #0d6efd;
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .campus-topbar {
+    padding: 0 16px !important;
+  }
+
+  .topbar-title {
+    font-size: 18px;
+  }
+}

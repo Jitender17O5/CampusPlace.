@@ -1,0 +1,98 @@
+
+/* NAVBAR BACKGROUND */
+.navbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e0e7ff;
+}
+
+/* NAVIGATION LINKS */
+.nav-hover {
+  color: #1e1b4b !important;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* LINK HOVER */
+.nav-hover:hover {
+  color: #4f46e5 !important;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #6d28d9,
+    #4f46e5,
+    #2563eb
+  );
+  transition: width 0.3s ease;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE NAV LINK */
+.nav-hover.active {
+  color: #4f46e5 !important;
+}
+
+.nav-hover.active::after {
+  width: 100%;
+}
+
+/* LOGIN BUTTON */
+.loginBtn {
+  background-color: transparent;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+      font-weight: 700 !important;
+
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  background-color: #eef2ff;
+  color: #3730a3;
+  border-color: #4f46e5;
+}
+
+/* REGISTER BUTTON */
+    .registerBtn {
+      background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+      );
+      color: #ffffff;
+      font-weight: 700 !important;
+      border: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+.registerBtn:hover {
+  background: linear-gradient(
+    135deg,
+    #3730a3,
+    #1d4ed8
+  );
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* PARTNER SECTION - OPTIONAL */
+/* Keep this in home.css if possible */
+.partner-section {
+  background: linear-gradient(
+    180deg,
+    #f5f3ff 0%,
+    #eef2ff 100%
+  );
+}
+

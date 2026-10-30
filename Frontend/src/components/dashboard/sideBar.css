@@ -1,0 +1,39 @@
+
+/* Sidebar */
+.campus-sidebar {
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.02);
+}
+
+/* Menu Icons */
+.campus-sidebar .ps-menu-icon {
+  font-size: 19px;
+}
+
+/* Hover effect on icons */
+.campus-sidebar .ps-menu-button:hover .ps-menu-icon {
+  color: #0d6efd !important;
+}
+
+/* Active menu text */
+.campus-sidebar .ps-active {
+  font-weight: 600;
+}
+
+/* Smooth movement */
+.campus-sidebar .ps-menu-button {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Logout hover */
+.logout-btn {
+  transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: translateY(-2px);
+}

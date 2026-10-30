@@ -1,0 +1,375 @@
+
+/* ================= PAGE ================= */
+
+.cp-page {
+  background: #f6f9fe;
+  min-height: 100%;
+  color: #12213a;
+}
+
+/* ================= HERO ================= */
+
+.cp-hero {
+  position: relative;
+  min-height: 280px;
+  border-radius: 18px;
+  padding: 72px 38px 34px;
+  background-color: #e2edfd;
+  background-image: linear-gradient(110deg, #d7e6fb, #edf5ff);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #dbe7f6;
+  box-shadow: 0 3px 12px rgba(28, 58, 96, 0.06);
+  overflow: hidden;
+}
+
+.cp-edit-btn {
+  position: absolute;
+  right: 26px;
+  top: 24px;
+  background: #1672f9;
+  border-color: #1672f9;
+  border-radius: 11px;
+  padding: 10px 19px;
+  font-weight: 600;
+}
+
+.cp-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= CIRCULAR COMPANY LOGO ================= */
+
+.cp-logo-box {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 3px solid #e2e9f2;
+}
+
+.cp-logo-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 0;
+}
+
+/* ================= HERO INFORMATION ================= */
+
+.cp-hero-info {
+  min-width: 0;
+}
+
+.cp-hero-info h1 {
+  font-size: clamp(1.5rem, 2.4vw, 2.3rem);
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  color: #0b1831;
+}
+
+.cp-industry {
+  font-size: 1.05rem;
+  color: #435c7d;
+  margin: 0 0 21px;
+}
+
+.cp-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px 26px;
+  flex-wrap: wrap;
+  color: #253c5b;
+  font-size: 0.95rem;
+}
+
+.cp-hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.cp-hero-meta svg {
+  color: #385a86;
+}
+
+/* ================= CARDS ================= */
+
+.cp-card {
+  border: 1px solid #e3eaf4 !important;
+  border-radius: 17px !important;
+  box-shadow: 0 3px 13px rgba(24, 49, 82, 0.045);
+  background: #fff;
+}
+
+.cp-card .card-body {
+  padding: 25px 28px;
+}
+
+/* ================= SECTION TITLES ================= */
+
+.cp-section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.3rem;
+  font-weight: 750;
+  margin-bottom: 20px;
+  color: #0b1831;
+}
+
+.cp-title-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #e6f0ff;
+  color: #1672f9;
+  font-size: 19px;
+}
+
+/* ================= COMPANY DETAILS ================= */
+
+.cp-detail-row {
+  display: grid;
+  grid-template-columns: 22px minmax(110px, 170px) minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+  padding: 11px 5px;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 0.95rem;
+}
+
+.cp-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.cp-detail-icon {
+  color: #446388;
+  margin-top: 3px;
+}
+
+.cp-detail-label {
+  color: #435773;
+}
+
+.cp-detail-value {
+  color: #12213a;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.cp-detail-value a {
+  color: #086af2;
+  text-decoration: none;
+}
+
+.cp-detail-value a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RECRUITER IDENTITY ================= */
+
+.cp-recruiter-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 6px 20px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e9eef5;
+}
+
+.cp-avatar {
+  width: 94px;
+  height: 94px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5efff;
+  color: #3888f5;
+  font-size: 45px;
+}
+
+.cp-recruiter-identity h3 {
+  font-size: 1.25rem;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+.cp-role-pill {
+  display: inline-block;
+  background: #e5efff;
+  color: #1266dc;
+  padding: 4px 13px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* ================= ABOUT COMPANY ================= */
+
+.cp-about {
+  color: #455a77;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* ================= EDIT PROFILE ================= */
+
+.cp-edit-card .card-body {
+  padding: 30px;
+}
+
+.cp-edit-heading {
+  font-size: 1.5rem;
+  font-weight: 750;
+  margin-bottom: 5px;
+}
+
+.cp-upload-section {
+  border-bottom: 1px solid #e6ebf3;
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+}
+
+.cp-upload-section h3,
+.cp-form-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* ================= BANNER PREVIEW ================= */
+
+.cp-banner-preview {
+  height: 200px;
+  background: linear-gradient(110deg, #d7e6fb, #edf5ff);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #dce7f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #547096;
+}
+
+/* ================= CIRCULAR LOGO PREVIEW ================= */
+
+.cp-logo-preview {
+  width: 115px;
+  height: 115px;
+  flex-shrink: 0;
+  border: 1px solid #e2e9f2;
+  background: #f5f8fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cp-logo-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+/* ================= FORM ================= */
+
+.cp-edit-card .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #324763;
+}
+
+.cp-edit-card .form-control {
+  border-radius: 9px;
+  padding: 10px 12px;
+}
+
+/* ================= TABLET / MOBILE ================= */
+
+@media (max-width: 767px) {
+  .cp-hero {
+    padding: 85px 22px 24px;
+  }
+
+  .cp-edit-btn {
+    right: 16px;
+    top: 16px;
+  }
+
+  .cp-hero-content {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cp-logo-box {
+    width: 85px;
+    height: 85px;
+  }
+
+  .cp-logo-box img {
+    padding: 6px;
+  }
+
+  .cp-hero-meta {
+    gap: 12px;
+  }
+
+  .cp-industry {
+    margin-bottom: 12px;
+  }
+
+  .cp-card .card-body {
+    padding: 21px 18px;
+  }
+
+  .cp-detail-row {
+    grid-template-columns: 20px minmax(82px, 120px) minmax(0, 1fr);
+    gap: 8px;
+    font-size: 0.87rem;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .cp-hero-content {
+    flex-direction: column;
+  }
+
+  .cp-hero-info h1 {
+    font-size: 1.55rem;
+  }
+
+  .cp-detail-row {
+    grid-template-columns: 20px minmax(0, 1fr);
+  }
+
+  .cp-detail-value {
+    grid-column: 2;
+  }
+}

@@ -1,0 +1,275 @@
+/* Why Choose CampusPlace */
+.choose-section {
+    background: #F8FAFF;
+}
+
+.choose-label {
+    color: #1687F8;
+}
+
+/* Feature cards */
+.feature-card {
+    background: #FFFFFF;
+    border: 1px solid #E8ECF5;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(79, 70, 229, 0.15);
+}
+
+/* Individual icon colors */
+.company-icon {
+    background: #EDE9FE;
+    color: #6D4AFF;
+}
+
+.opportunity-icon {
+    background: #E0F2FE;
+    color: #1687F8;
+}
+
+.matching-icon {
+    background: #FCE7F3;
+    color: #EC4899;
+}
+
+.support-icon {
+    background: #D1FAE5;
+    color: #10B981;
+}
+
+/* Hiring Partners */
+.partner-section {
+  background: linear-gradient(
+    180deg,
+    #9d98ef 0%,
+    #EEF4FF 100%
+  );
+}
+
+.partner-label {
+    background: #DBEAFE;
+    color: #1687F8;
+}
+
+/* Footer */
+.footer-bg {
+  background: linear-gradient(
+    135deg,
+    #142A52 0%,
+    #10264A 45%,
+    #1A2F5F 100%
+  );
+  color: white;
+}
+.p-bold{
+    font-weight: 600;
+}
+.hero-title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0f172a;
+}
+.textcolor{
+  color: white;
+}
+
+.hero-title span {
+  color: #4f46e5;
+}
+.hero-description {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #64748b;
+  max-width: 570px;
+}
+
+.footer-link {
+  color: black;              /* Default color */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #0d6efd;            /* Blue on hover */
+  font-weight: 600;
+  font-size: large;
+
+}
+.footer-header:hover{
+    font-weight: 600;
+  font-size: x-large;
+  color: green;
+
+}
+
+
+
+.hero-stats {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    width: max-content;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 125px;
+}
+
+.stat-item h3 {
+    color: #4F46E5;
+    font-size: 26px;
+}
+
+.stat-item p {
+    color: #64748B;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.stats-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.companies-stat {
+    background: #EDE9FE;
+    color: #7C3AED;
+}
+
+.students-stat {
+    background: #E0F2FE;
+    color: #0284C7;
+}
+
+.jobs-stat {
+    background: #DCFCE7;
+    color: #16A34A;
+}
+
+.placement-stat {
+    background: #F3E8FF;
+    color: #9333EA;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 45px;
+    background: #CBD5E1;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-stats {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .stat-item {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .stat-item {
+        width: 100%;
+    }
+}
+.footer-logo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.35));
+}
+/* placementjournery */
+.cta-section {
+    background: linear-gradient(
+        135deg,
+        #4F46E5 0%,
+        #5B4FF0 45%,
+        #2563EB 100%
+    );
+    color: white;
+
+    box-shadow: 0 15px 40px rgba(79, 70, 229, 0.20);
+}
+
+.cta-label {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #DBEAFE;
+    margin-bottom: 12px;
+}
+
+.cta-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.cta-description {
+    color: #E0E7FF;
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin-bottom: 0;
+}
+
+
+/* CREATE ACCOUNT */
+.cta-primary-btn {
+    background: #FFFFFF !important;
+    color: #4F46E5 !important;
+    border: 2px solid #FFFFFF !important;
+
+    padding: 11px 25px !important;
+    font-weight: 600 !important;
+    border-radius: 9px !important;
+}
+
+.cta-primary-btn:hover {
+    background: #F1F5FF !important;
+    color: #4338CA !important;
+    transform: translateY(-2px);
+}
+
+
+/* LEARN MORE */
+.cta-secondary-btn {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+
+    padding: 11px 25px !important;
+    font-weight: 600 !important;
+    border-radius: 9px !important;
+}
+
+.cta-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: #FFFFFF !important;
+}
