@@ -28,8 +28,10 @@ import { JobDetails } from "./pages/Jobs/JobDetails";
 
 import { ToastContainer } from "react-toastify";
 
-import { StudentDashboard } from "./pages/Student/StudentDashboard";
-import { StudentProfile } from "./pages/Student/StudentProfile";
+
+import { StudentDashboard } from "./pages/Student/studentDashboard";
+import { StudentProfile } from "./pages/Student/studentProfile";
+// import StudentP  
 import { EditProfile } from "./pages/Student/editProfile";
 // import { StudentJobs } from "./pages/Student/Jobs";
 import { StudentJobs } from "./pages/Student/StudentJobs";
