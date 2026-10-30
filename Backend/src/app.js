@@ -31,5 +31,10 @@ app.use("/api/newsletter", newsletterRoutes);
 app.use("/api/contact", contactRoutes);
 app.use("/api/password", passwordRoutes);
 
-
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "CampusPlace Backend is Running on Vercel"
+  });
+});
 module.exports=app
