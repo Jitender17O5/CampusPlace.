@@ -32,7 +32,7 @@ import {
   getStudentProfile,
 } from "../../Api/postApi";
 
-import "./studentDashboard.css";
+import "./StudentDashboard.css";
 
 export const StudentDashboard = () => {
   const navigate = useNavigate();

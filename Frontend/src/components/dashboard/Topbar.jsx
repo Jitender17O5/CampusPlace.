@@ -1,7 +1,7 @@
 
 import { IoNotificationsOutline } from "react-icons/io5";
 import { useLocation } from "react-router-dom";
-import "./topbar.css";
+import "./Topbar.css";
 
 export const Topbar = ({ role }) => {
   const location = useLocation();
